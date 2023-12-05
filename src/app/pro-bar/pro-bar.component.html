@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./pro-bar.component.scss">
+  </head>
+  <body>
+<button (click)="addData()">Add data</button>
+
+<button (click)="getCountries()">Fetch all</button>
+ 
+
+<input [(ngModel)] = "searchCountryVal" >
+
+<button (click)="searchCountry()">Search</button>
+
+<ul *ngFor="let item of countries">
+    <li>Name: {{item?.name?.common}}</li>
+
+</ul>
+</body>
+</html>
+
+
+
+
+
+
